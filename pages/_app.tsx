@@ -2,17 +2,18 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 
-import { SideNav, TableOfContents, TopNav } from "../components";
-
 import "prismjs";
 // Import other Prism themes here
 import "prismjs/components/prism-bash.min";
 import "prismjs/themes/prism.css";
 
-import "../public/globals.css";
+import "../styles/globals.css";
 
 import type { AppProps } from "next/app";
 import type { MarkdocNextJsPageProps } from "@markdoc/next.js";
+import { TopNav } from "../components/TopNav";
+import { TableOfContents } from "../components/TableOfContents";
+import { ThemeProvider } from "next-themes";
 
 const TITLE = "Markdoc";
 const DESCRIPTION = "A powerful, flexible, Markdown-based authoring framework";
@@ -73,34 +74,22 @@ export default function MyApp({ Component, pageProps }: AppProps<MyAppProps>) {
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <TopNav>
-        <Link href="/docs">Docs</Link>
-      </TopNav>
-      <div className="page">
-        <SideNav />
-        <main className="flex column">
-          <Component {...pageProps} />
-        </main>
-        <TableOfContents toc={toc} />
-      </div>
-      <style jsx>
-        {`
-          .page {
-            position: fixed;
-            top: var(--top-nav-height);
-            display: flex;
-            width: 100vw;
-            flex-grow: 1;
-          }
-          main {
-            overflow: auto;
-            height: calc(100vh - var(--top-nav-height));
-            flex-grow: 1;
-            font-size: 16px;
-            padding: 0 2rem 2rem;
-          }
-        `}
-      </style>
+
+      <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        storageKey="cp-theme"
+      >
+        <div className="h-screen flex w-screen flex-grow bg-white dark:bg-background-dark-500 text-gray-800 dark:text-gray-100">
+          <TableOfContents toc={toc} />
+          <div className="overflow-auto flex-grow pt-0 pl-4 pr-8 pb-8">
+            <TopNav></TopNav>
+            <main className="">
+              <Component {...pageProps} />
+            </main>
+          </div>
+        </div>
+      </ThemeProvider>
     </>
   );
 }

@@ -1,38 +1,18 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
-export function TopNav({children}) {
+export function TopNav() {
   return (
-    <nav>
-      <Link href="/" className="flex">
-        Home
+    <nav className="text-sm flex flex-row justify-end py-6">
+      <Link href="https://zitadel.com/docs" className="flex flex-row px-4">
+        Docs
       </Link>
-      <section>{children}</section>
-      <style jsx>
-        {`
-          nav {
-            top: 0;
-            position: fixed;
-            width: 100%;
-            z-index: 100;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 1rem;
-            padding: 1rem 2rem;
-            background: white;
-            border-bottom: 1px solid var(--border-color);
-          }
-          nav :global(a) {
-            text-decoration: none;
-          }
-          section {
-            display: flex;
-            gap: 1rem;
-            padding: 0;
-          }
-        `}
-      </style>
+      <Link href="https://zitadel.com/contact" className="flex flex-row px-4">
+        Support
+      </Link>
+      <Link href="https://zitadel.cloud" className="flex flex-row px-4">
+        Customer portal
+      </Link>
     </nav>
   );
 }

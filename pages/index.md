@@ -3,15 +3,35 @@ title: Get started with Markdoc
 description: How to get started with Markdoc
 ---
 
-# Full Next.js example
+# ZITADEL API reference
 
 {% callout %}
-This is a full-featured boilerplate for a creating a documentation website using Markdoc and Next.js.
+This is be our full-featured API reference for ZITADEL
 {% /callout %}
 
-## Setup
+### Introduction
 
-First, clone this repo and install the dependencies required:
+This page will be deployed on [https://www.zitadel.com/docs/api](https://www.zitadel.com/docs/api) and house all API relevant documentation including code snippets and examples.
+
+You can start editing the page by modifying `/pages/index.md`. The page auto-updates as you edit the file.
+
+### Authentication
+
+blabla
+
+### Organization Context
+
+...blabla use `x-zitadel-orgid` header.
+
+### Errors
+
+### Metadata
+
+### Pagination
+
+## Core resources
+
+this is an example bash script:
 
 ```bash
 npm install
@@ -19,26 +39,114 @@ npm install
 yarn install
 ```
 
-Then, run the development server:
+### Users
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Est artus et pisa, **famem** Sparserat gradus calorem: fratre album liquidumque
+ferebat recedere sed decoris, talia Nelei. Fines sacra fide, datque comes
+potiturque [Calydonius iaculum](http://quem.io/) terraque dumque moverent arvum
+me violave iurasse. Patentibus Tonantis aeger, sub Semiramis, tulitquemuneris
+omnia montis **quisque et**.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Capacem munere labentibus arida
+2. Ex munus sparsus data
+3. Primum omnes iurasse vidi dicunt sunt primus
 
-You can start editing the page by modifying `index.md`. The page auto-updates as you edit the file.
+**Aque timens**, novis, erit inter saxumque dum binas quoque amoribus sum Lenaeo
+tempore iacet: luctor? Huc et est iam annis, ille ait, quas est. Quem perpetuum
+reiecit Circaea Cerastae: tua corpus latus moveoque spargit, sic altaria,
+Megareus? Antandro crines.
 
-## Deploy
+Simul recentis argenteus ex ignis **in**, consistere indoluit auris [protegat
+recondidit](http://gratamquemole.io/documenta.aspx) herbis diva brevissima: non
+iram pectoribus illo. Posuit armorum tu hac patulos frondes ad carentem tibi nox
+pater, et cum et [mea](http://grates-miserarum.org/cognitus.php). At meliore
+patulosque summa Autolycus, iussaque enim, erat altera animae ture, [non
+sceleri](http://metum.org/illum.html).
 
-The quickest way to deploy your own version of this boilerplate is by deploying it with [Vercel](https://vercel.com) or [Netlify](https://www.netlify.com/) by clicking one of the buttons below.
+### Organizations
 
-### Deploy with Vercel
+Est artus et pisa, **famem** Sparserat gradus calorem: fratre album liquidumque
+ferebat recedere sed decoris, talia Nelei. Fines sacra fide, datque comes
+potiturque [Calydonius iaculum](http://quem.io/) terraque dumque moverent arvum
+me violave iurasse. Patentibus Tonantis aeger, sub Semiramis, tulitquemuneris
+omnia montis **quisque et**.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/markdoc/next.js-starter)
+1. Capacem munere labentibus arida
+2. Ex munus sparsus data
+3. Primum omnes iurasse vidi dicunt sunt primus
 
-### Deploy to Netlify
+**Aque timens**, novis, erit inter saxumque dum binas quoque amoribus sum Lenaeo
+tempore iacet: luctor? Huc et est iam annis, ille ait, quas est. Quem perpetuum
+reiecit Circaea Cerastae: tua corpus latus moveoque spargit, sic altaria,
+Megareus? Antandro crines.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/markdoc/next.js-starter)
+Simul recentis argenteus ex ignis **in**, consistere indoluit auris [protegat
+recondidit](http://gratamquemole.io/documenta.aspx) herbis diva brevissima: non
+iram pectoribus illo. Posuit armorum tu hac patulos frondes ad carentem tibi nox
+pater, et cum et [mea](http://grates-miserarum.org/cognitus.php). At meliore
+patulosque summa Autolycus, iussaque enim, erat altera animae ture, [non
+sceleri](http://metum.org/illum.html).
+
+### Policies
+
+Est artus et pisa, **famem** Sparserat gradus calorem: fratre album liquidumque
+ferebat recedere sed decoris, talia Nelei. Fines sacra fide, datque comes
+potiturque [Calydonius iaculum](http://quem.io/) terraque dumque moverent arvum
+me violave iurasse. Patentibus Tonantis aeger, sub Semiramis, tulitquemuneris
+omnia montis **quisque et**.
+
+1. Capacem munere labentibus arida
+2. Ex munus sparsus data
+3. Primum omnes iurasse vidi dicunt sunt primus
+
+**Aque timens**, novis, erit inter saxumque dum binas quoque amoribus sum Lenaeo
+tempore iacet: luctor? Huc et est iam annis, ille ait, quas est. Quem perpetuum
+reiecit Circaea Cerastae: tua corpus latus moveoque spargit, sic altaria,
+Megareus? Antandro crines.
+
+Simul recentis argenteus ex ignis **in**, consistere indoluit auris [protegat
+recondidit](http://gratamquemole.io/documenta.aspx) herbis diva brevissima: non
+iram pectoribus illo. Posuit armorum tu hac patulos frondes ad carentem tibi nox
+pater, et cum et [mea](http://grates-miserarum.org/cognitus.php). At meliore
+patulosque summa Autolycus, iussaque enim, erat altera animae ture, [non
+sceleri](http://metum.org/illum.html).
+
+### Projects
+
+Est artus et pisa, **famem** Sparserat gradus calorem: fratre album liquidumque
+ferebat recedere sed decoris, talia Nelei. Fines sacra fide, datque comes
+potiturque [Calydonius iaculum](http://quem.io/) terraque dumque moverent arvum
+me violave iurasse. Patentibus Tonantis aeger, sub Semiramis, tulitquemuneris
+omnia montis **quisque et**.
+
+1. Capacem munere labentibus arida
+2. Ex munus sparsus data
+3. Primum omnes iurasse vidi dicunt sunt primus
+
+**Aque timens**, novis, erit inter saxumque dum binas quoque amoribus sum Lenaeo
+tempore iacet: luctor? Huc et est iam annis, ille ait, quas est. Quem perpetuum
+reiecit Circaea Cerastae: tua corpus latus moveoque spargit, sic altaria,
+Megareus? Antandro crines.
+
+Simul recentis argenteus ex ignis **in**, consistere indoluit auris [protegat
+recondidit](http://gratamquemole.io/documenta.aspx) herbis diva brevissima: non
+iram pectoribus illo. Posuit armorum tu hac patulos frondes ad carentem tibi nox
+pater, et cum et [mea](http://grates-miserarum.org/cognitus.php). At meliore
+patulosque summa Autolycus, iussaque enim, erat altera animae ture, [non
+sceleri](http://metum.org/illum.html).
+
+### Applications
+
+### Members
+
+## Auth
+
+## Management
+
+### Actions
+
+## Admin
+
+## Open Id Connect
+
+## SAML

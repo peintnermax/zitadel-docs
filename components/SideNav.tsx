@@ -20,7 +20,7 @@ export function SideNav() {
   const router = useRouter();
 
   return (
-    <nav className="sidenav">
+    <nav className="sticky top-0 h-screen bottom-0 bg-zinc-500 py-4 border-r border-border-light dark:border-border-dark">
       {items.map((item) => (
         <div key={item.title}>
           <span>{item.title}</span>
@@ -28,7 +28,10 @@ export function SideNav() {
             {item.links.map((link) => {
               const active = router.pathname === link.href;
               return (
-                <li key={link.href} className={active ? "active" : ""}>
+                <li
+                  key={link.href}
+                  className={active ? "active" : "text-red-500"}
+                >
                   <Link {...link} />
                 </li>
               );
@@ -36,11 +39,10 @@ export function SideNav() {
           </ul>
         </div>
       ))}
-      <style jsx>
+      {/* <style jsx>
         {`
           nav {
             position: sticky;
-            top: var(--top-nav-height);
             height: calc(100vh - var(--top-nav-height));
             flex: 0 0 auto;
             overflow-y: auto;
@@ -67,7 +69,7 @@ export function SideNav() {
             text-decoration: underline;
           }
         `}
-      </style>
+      </style> */}
     </nav>
   );
 }
